@@ -1,0 +1,73 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "splat tim",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "RequestMerchandise",
+          "samples": [
+            "show me the current merchandise",
+            "show me the splatnet exclusive gear",
+            "what can i order from splatnet",
+            "what items are available in the shop",
+            "what items can i order at the moment",
+            "what merchandise is available on splatnet",
+            "what's available in the splatnet gear shop",
+            "what's in the shop",
+            "what's on splatnet right now",
+            "what's on the splatnet right now"
+          ]
+        },
+        {
+          "name": "RequestStagesUpcoming",
+          "slots": [
+            {
+              "name": "gamemodeslot",
+              "type": "GAMEMODE"
+            }
+          ],
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "ranked"
+              }
+            },
+            {
+              "name": {
+                "value": "regular"
+              }
+            },
+            {
+              "name": {
+                "value": "all"
+              }
+            },
+            {
+              "name": {
+                "value": "league"
+              }
+            }
+          ],
+          "name": "GAMEMODE"
+        }
+      ]
+    }
+  }
+}

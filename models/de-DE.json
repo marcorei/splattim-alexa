@@ -1,0 +1,24 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "tintenfisch tony",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent"
+        },
+        {
+          "name": "AMAZON.HelpIntent"
+        },
+        {
+          "name": "AMAZON.StopIntent"
+        },
+        {
+          "name": "Hello",
+          "samples": [
+            "World"
+          ]
+        }
+      ]
+    }
+  }
+}
