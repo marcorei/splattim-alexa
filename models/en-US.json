@@ -16,6 +16,22 @@
           "samples": []
         },
         {
+          "name": "MemeHeDoesIt",
+          "samples": [
+            "Booyah",
+            "He does it",
+            "It's him"
+          ]
+        },
+        {
+          "name": "MemeItsSplatTim",
+          "samples": [
+            "It's Splat Time",
+            "It's Splat Tim",
+            "It Splat Tim"
+          ]
+        },
+        {
           "name": "RequestMerchandise",
           "samples": [
             "show me the current merchandise",
@@ -31,43 +47,606 @@
           ]
         },
         {
-          "name": "RequestStagesUpcoming",
+          "name": "RequestSalmonRun",
+          "samples": [
+            "What's the current Salmon Run rotation",
+            "When's the next Salmon Run",
+            "When is the next Salmon Run shift",
+            "When is Salmon Run",
+            "Salmon Run times",
+            "What are the weapons for Salmon Run",
+            "When is the next Salmon Run",
+            "Is Mr. Grizz hiring",
+            "When can I play Salmon Run",
+            "Can I play Salmon Run right now",
+            "When is Grizz Co hiring",
+            "Is Grizz Co hiring"
+          ]
+        },
+        {
+          "name": "RequestScheduleForRuleAndMode",
+          "slots": [
+            {
+              "name": "gameruleslot",
+              "type": "GAMERULE"
+            },
+            {
+              "name": "gamemodeslot",
+              "type": "GAMEMODE"
+            }
+          ],
+          "samples": [
+            "how long do i have to wait to play {game_ruleslot} in {gamemodeslot}",
+            "what time does {game_ruleslot} start again in {gamemodeslot}",
+            "when can i play {game_ruleslot} in {gamemodeslot}",
+            "when is the next {game_ruleslot} for {gamemodeslot}"
+          ]
+        },
+        {
+          "intent": "RequestScheduleForStage",
+          "slots": [
+            {
+              "name": "stageslot",
+              "type": "STAGE"
+            }
+          ],
+          "samples": [
+            "{stageslot}",
+            "i want to play on {stageslot}",
+            "when can i play on {stageslot}",
+            "when can i play {stageslot}"
+          ]
+        },
+        {
+          "intent": "RequestSplatfestResult",
+          "slots": [
+            {
+              "name": "regionslot",
+              "type": "REGION"
+            }
+          ],
+          "samples": [
+            "splatfest results",
+            "what are the results of the last splatfest in {regionslot}",
+            "what are the results of the last splatfest",
+            "who did win in the last splatfest",
+            "who won the last splatfest",
+            "who won the last {regionslot} splatfest"
+          ]
+        },
+        {
+          "intent": "RequestSplatfestUpcoming",
+          "slots": [
+            {
+              "name": "regionslot",
+              "type": "REGION"
+            }
+          ],
+          "samples": [
+            "is currently a splatfest in {regionslot}",
+            "when is splatfest",
+            "when is the next splatfest in {regionslot}",
+            "when is the next splatfest"
+          ]
+        },
+        {
+          "intent": "RequestStagesCurrent",
           "slots": [
             {
               "name": "gamemodeslot",
               "type": "GAMEMODE"
             }
           ],
-          "samples": []
+          "samples": [
+            "show me the current maps for {gamemodeslot}",
+            "show me the current stages for {gamemodeslot}",
+            "show me {gamemodeslot} current stages",
+            "tell me about {gamemodeslot}",
+            "what are the current splatoon stages",
+            "what are the current stages for {gamemodeslot}",
+            "what are the current stages",
+            "what are the {gamemodeslot} stages",
+            "what maps are available",
+            "what stages in {gamemodeslot} right now",
+            "what's the current rotation",
+            "what's the schedule",
+            "what's the stage rotation"
+          ]
+        },
+        {
+          "intent": "RequestStagesUpcoming",
+          "slots": [
+            {
+              "name": "gamemodeslot",
+              "type": "GAMEMODE"
+            }
+          ],
+          "samples": [
+            "i want to see all stages for {gamemodeslot}",
+            "show me all upcoming maps for {gamemodeslot}",
+            "show me every future stage for {gamemodeslot}",
+            "show me every upcoming stage for {gamemodeslot}",
+            "what's the next {gamemodeslot}"
+          ]
+        },
+        {
+          "intent": "SmallTalkAge",
+          "samples": [
+            "how old are you",
+            "what's your age"
+          ]
+        },
+        {
+          "intent": "SmallTalkHello",
+          "samples": [
+            "greetings",
+            "hello",
+            "hey",
+            "hi",
+            "woomy"
+          ]
+        },
+        {
+          "intent": "SmallTalkHowAreYou",
+          "samples": [
+            "are you ok",
+            "how are you doing",
+            "how are you",
+            "how's life",
+            "what's up"
+          ]
+        },
+        {
+          "intent": "SmallTalkInsulting",
+          "samples": [
+            "die in a hole",
+            "i hate you",
+            "jump off a cliff",
+            "you suck"
+          ]
         }
       ],
       "types": [
         {
+          "name": "GAMEMODE",
           "values": [
             {
+              "id": "ranked",
               "name": {
-                "value": "ranked"
+                "value": "ranked",
+                "synonyms": [
+                  "ranked mode", 
+                  "ranked battles"
+                ]
               }
             },
             {
+              "id": "regular",
               "name": {
-                "value": "regular"
+                "value": "regular",
+                "synonyms": [
+                  "regular mode", 
+                  "regular battles"
+                ]
               }
             },
             {
+              "id": "all",
               "name": {
-                "value": "all"
+                "value": "all",
+                "synonyms": [
+                  "all modes", 
+                  "all game modes", 
+                  "every mode", 
+                  "all battles", 
+                  "every battle mode", 
+                  "all battle modes"
+                ]
               }
             },
             {
+              "id": "league",
               "name": {
-                "value": "league"
+                "value": "league",
+                "synonyms": [
+                  "ranked mode", 
+                  "ranked battles"
+                ]
               }
             }
-          ],
-          "name": "GAMEMODE"
+          ]
+        },
+        {
+          "name": "GAMERULE",
+          "values": [
+            {
+              "id": "clam_blitz",
+              "name": {
+                "value": "clam blitz",
+                "synonyms":["blitz", "clams"] 
+              }
+            },
+            {
+              "id": "tower_control",
+              "name": {
+                "value": "tower control",
+                "synonyms":["tower"] 
+              }
+            },
+            {
+              "id": "splat_zones",
+              "name": {
+                "value": "splat zones",
+                "synonyms":["zones"] 
+              }
+            },
+            {
+              "id": "turf_war",
+              "name": {
+                "value": "turf war",
+                "synonyms":["turf"] 
+              }
+            },
+            {
+              "id": "rainmaker",
+              "name": {
+                "value": "rainmaker",
+                "synonyms":[] 
+              }
+            }
+          ]
+        },
+        {
+          "name": "REGION",
+          "values": [
+            {
+              "id": "eu",
+              "name": {
+                "value": "eu",
+                "synonyms":[
+                  "EU", 
+                  "Europe",
+                  "Germany",
+                  "european",
+                  "german"
+                ] 
+              }
+            },
+            {
+              "id": "na",
+              "name": {
+                "value": "na",
+                "synonyms":[
+                  "NA",
+                  "North America",
+                  "USA",
+                  "America",
+                  "US",
+                  "american"
+                ] 
+              }
+            },
+            {
+              "id": "jp",
+              "name": {
+                "value": "jp",
+                "synonyms":[
+                  "JP",
+                  "Japan",
+                  "japanese",
+                  "asian",
+                  "Asia"
+                ] 
+              }
+            }
+          ]
+        },
+        {
+          "name": "STAGE",
+          "values": [
+            {
+              "id": "0",
+              "name": {
+                "value": "The Reef",
+                "synonyms":["Reef"] 
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "Musselforge Fitness",
+                "synonyms":["Musselforge"] 
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "Starfish Mainstage",
+                "synonyms":[
+                  "Mainstage",
+                  "Starfish"
+                ] 
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "Sturgeon Shipyard",
+                "synonyms":["Shipyard"] 
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "Inkblot Art Academy",
+                "synonyms":[
+                  "Inkblot",
+                  "Academy"
+                ] 
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "Humpback Pump Track",
+                "synonyms":[
+                  "Humpback",
+                  "Pump Track"
+                ] 
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "Manta Maria",
+                "synonyms":[] 
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "Port Mackerel",
+                "synonyms":[] 
+              }
+            },
+            {
+              "id": "8",
+              "name": {
+                "value": "Moray Towers",
+                "synonyms":["Moray"] 
+              }
+            },
+            {
+              "id": "9",
+              "name": {
+                "value": "Snapper Canal",
+                "synonyms":[] 
+              }
+            },
+            {
+              "id": "10",
+              "name": {
+                "value": "Kelp Dome",
+                "synonyms":[] 
+              }
+            },
+            {
+              "id": "11",
+              "name": {
+                "value": "Blackbelly Skatepark",
+                "synonyms":[
+                  "Blackbelly",
+                  "Skatepark"
+                ] 
+              }
+            },
+            {
+              "id": "12",
+              "name": {
+                "value": "Shellendorf Institute",
+                "synonyms":[
+                  "Shellendorf",
+                  "Institute"
+                ] 
+              }
+            },
+            {
+              "id": "13",
+              "name": {
+                "value": "MakoMart",
+                "synonyms":[] 
+              }
+            },
+            {
+              "id": "14",
+              "name": {
+                "value": "Walleye Warehouse",
+                "synonyms":["Warehouse"] 
+              }
+            },
+            {
+              "id": "15",
+              "name": {
+                "value": "Arowana Mall",
+                "synonyms":["Arowana"] 
+              }
+            }
+          ]
         }
       ]
-    }
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RequestScheduleForRuleAndMode",
+          "confirmationRequired": false,
+          "promts": {},
+          "slots": [
+            {
+              "name": "gameruleslot",
+              "type": "GAMERULE",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.RequestScheduleForRuleAndMode.gameruleslot"
+              }
+            },
+            {
+              "name": "gamemodeslot",
+              "type": "GAMEMODE",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.RequestScheduleForRuleAndMode.gamemodeslot"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RequestScheduleForStage",
+          "confirmationRequired": false,
+          "promts": {},
+          "slots": [
+            {
+              "name": "stageslot",
+              "type": "STAGE",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.RequestScheduleForStage.stageslot"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RequestSplatfestResult",
+          "confirmationRequired": false,
+          "promts": {},
+          "slots": [
+            {
+              "name": "regionslot",
+              "type": "REGION",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.RequestSplatfestResult.regionslot"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RequestSplatfestUpcoming",
+          "confirmationRequired": false,
+          "promts": {},
+          "slots": [
+            {
+              "name": "regionslot",
+              "type": "REGION",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.RequestSplatfestUpcoming.regionslot"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RequestStagesUpcoming",
+          "confirmationRequired": false,
+          "promts": {},
+          "slots": [
+            {
+              "name": "regionslot",
+              "type": "REGION",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.RequestStagesUpcoming.regionslot"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.RequestScheduleForRuleAndMode.gameruleslot",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What type of game do you want to play? Tower, zones, clam blitz or rainmaker?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Do you want to clam blitz, tower, zones or rainmaker?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.RequestScheduleForRuleAndMode.gamemodeslot",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What game mode do you want to play that in? Ranked or league?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Want to play that in rankend or league?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.RequestScheduleForStage.stageslot",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What stage?"
+          },
+          {
+            "type": "PlainText",
+            "value": "On which stage?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.RequestSplatfestResult.regionslot",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "In which region? Japan, North America or Europe?"
+          },
+          {
+            "type": "PlainText",
+            "value": "For Japan, North America or Europe?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.RequestSplatfestUpcoming.regionslot",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "In North America, Japan or Europe?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What region? Japan, North America or Europe?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.RequestStagesUpcoming.regionslot",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "In North America, Japan or Europe?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What region? Japan, North America or Europe?"
+          }
+        ]
+      }
+    ]
   }
 }
