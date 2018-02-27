@@ -83,7 +83,7 @@
           ]
         },
         {
-          "intent": "RequestScheduleForStage",
+          "name": "RequestScheduleForStage",
           "slots": [
             {
               "name": "stageslot",
@@ -98,7 +98,7 @@
           ]
         },
         {
-          "intent": "RequestSplatfestResult",
+          "name": "RequestSplatfestResult",
           "slots": [
             {
               "name": "regionslot",
@@ -115,7 +115,7 @@
           ]
         },
         {
-          "intent": "RequestSplatfestUpcoming",
+          "name": "RequestSplatfestUpcoming",
           "slots": [
             {
               "name": "regionslot",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "intent": "RequestStagesCurrent",
+          "name": "RequestStagesCurrent",
           "slots": [
             {
               "name": "gamemodeslot",
@@ -154,7 +154,7 @@
           ]
         },
         {
-          "intent": "RequestStagesUpcoming",
+          "name": "RequestStagesUpcoming",
           "slots": [
             {
               "name": "gamemodeslot",
@@ -170,14 +170,14 @@
           ]
         },
         {
-          "intent": "SmallTalkAge",
+          "name": "SmallTalkAge",
           "samples": [
             "how old are you",
             "what's your age"
           ]
         },
         {
-          "intent": "SmallTalkHello",
+          "name": "SmallTalkHello",
           "samples": [
             "greetings",
             "hello",
@@ -187,7 +187,7 @@
           ]
         },
         {
-          "intent": "SmallTalkHowAreYou",
+          "name": "SmallTalkHowAreYou",
           "samples": [
             "are you ok",
             "how are you doing",
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "intent": "SmallTalkInsulting",
+          "name": "SmallTalkInsulting",
           "samples": [
             "die in a hole",
             "i hate you",
