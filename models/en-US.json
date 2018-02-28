@@ -76,10 +76,10 @@
             }
           ],
           "samples": [
-            "how long do i have to wait to play {game_ruleslot} in {gamemodeslot}",
-            "what time does {game_ruleslot} start again in {gamemodeslot}",
-            "when can i play {game_ruleslot} in {gamemodeslot}",
-            "when is the next {game_ruleslot} for {gamemodeslot}"
+            "how long do i have to wait to play {gameruleslot} in {gamemodeslot}",
+            "what time does {gameruleslot} start again in {gamemodeslot}",
+            "when can i play {gameruleslot} in {gamemodeslot}",
+            "when is the next {gameruleslot} for {gamemodeslot}"
           ]
         },
         {
@@ -474,179 +474,179 @@
           ]
         }
       ]
-    },
-    "dialog": {
-      "intents": [
-        {
-          "name": "RequestScheduleForRuleAndMode",
-          "confirmationRequired": false,
-          "promts": {},
-          "slots": [
-            {
-              "name": "gameruleslot",
-              "type": "GAMERULE",
-              "confirmationRequired": false,
-              "elicitationRequired": true,
-              "prompts": {
-                "elicitation": "Elicit.RequestScheduleForRuleAndMode.gameruleslot"
-              }
-            },
-            {
-              "name": "gamemodeslot",
-              "type": "GAMEMODE",
-              "confirmationRequired": false,
-              "elicitationRequired": true,
-              "prompts": {
-                "elicitation": "Elicit.RequestScheduleForRuleAndMode.gamemodeslot"
-              }
-            }
-          ]
-        },
-        {
-          "name": "RequestScheduleForStage",
-          "confirmationRequired": false,
-          "promts": {},
-          "slots": [
-            {
-              "name": "stageslot",
-              "type": "STAGE",
-              "confirmationRequired": false,
-              "elicitationRequired": true,
-              "prompts": {
-                "elicitation": "Elicit.RequestScheduleForStage.stageslot"
-              }
-            }
-          ]
-        },
-        {
-          "name": "RequestSplatfestResult",
-          "confirmationRequired": false,
-          "promts": {},
-          "slots": [
-            {
-              "name": "regionslot",
-              "type": "REGION",
-              "confirmationRequired": false,
-              "elicitationRequired": true,
-              "prompts": {
-                "elicitation": "Elicit.RequestSplatfestResult.regionslot"
-              }
-            }
-          ]
-        },
-        {
-          "name": "RequestSplatfestUpcoming",
-          "confirmationRequired": false,
-          "promts": {},
-          "slots": [
-            {
-              "name": "regionslot",
-              "type": "REGION",
-              "confirmationRequired": false,
-              "elicitationRequired": true,
-              "prompts": {
-                "elicitation": "Elicit.RequestSplatfestUpcoming.regionslot"
-              }
-            }
-          ]
-        },
-        {
-          "name": "RequestStagesUpcoming",
-          "confirmationRequired": false,
-          "promts": {},
-          "slots": [
-            {
-              "name": "regionslot",
-              "type": "REGION",
-              "confirmationRequired": false,
-              "elicitationRequired": true,
-              "prompts": {
-                "elicitation": "Elicit.RequestStagesUpcoming.regionslot"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    "prompts": [
+    }
+  },
+  "dialog": {
+    "intents": [
       {
-        "id": "Elicit.RequestScheduleForRuleAndMode.gameruleslot",
-        "variations": [
+        "name": "RequestScheduleForRuleAndMode",
+        "confirmationRequired": false,
+        "promts": {},
+        "slots": [
           {
-            "type": "PlainText",
-            "value": "What type of game do you want to play? Tower, zones, clam blitz or rainmaker?"
+            "name": "gameruleslot",
+            "type": "GAMERULE",
+            "confirmationRequired": false,
+            "elicitationRequired": true,
+            "prompts": {
+              "elicitation": "Elicit.RequestScheduleForRuleAndMode.gameruleslot"
+            }
           },
           {
-            "type": "PlainText",
-            "value": "Do you want to clam blitz, tower, zones or rainmaker?"
+            "name": "gamemodeslot",
+            "type": "GAMEMODE",
+            "confirmationRequired": false,
+            "elicitationRequired": true,
+            "prompts": {
+              "elicitation": "Elicit.RequestScheduleForRuleAndMode.gamemodeslot"
+            }
           }
         ]
       },
       {
-        "id": "Elicit.RequestScheduleForRuleAndMode.gamemodeslot",
-        "variations": [
+        "name": "RequestScheduleForStage",
+        "confirmationRequired": false,
+        "promts": {},
+        "slots": [
           {
-            "type": "PlainText",
-            "value": "What game mode do you want to play that in? Ranked or league?"
-          },
-          {
-            "type": "PlainText",
-            "value": "Want to play that in rankend or league?"
+            "name": "stageslot",
+            "type": "STAGE",
+            "confirmationRequired": false,
+            "elicitationRequired": true,
+            "prompts": {
+              "elicitation": "Elicit.RequestScheduleForStage.stageslot"
+            }
           }
         ]
       },
       {
-        "id": "Elicit.RequestScheduleForStage.stageslot",
-        "variations": [
+        "name": "RequestSplatfestResult",
+        "confirmationRequired": false,
+        "promts": {},
+        "slots": [
           {
-            "type": "PlainText",
-            "value": "What stage?"
-          },
-          {
-            "type": "PlainText",
-            "value": "On which stage?"
+            "name": "regionslot",
+            "type": "REGION",
+            "confirmationRequired": false,
+            "elicitationRequired": true,
+            "prompts": {
+              "elicitation": "Elicit.RequestSplatfestResult.regionslot"
+            }
           }
         ]
       },
       {
-        "id": "Elicit.RequestSplatfestResult.regionslot",
-        "variations": [
+        "name": "RequestSplatfestUpcoming",
+        "confirmationRequired": false,
+        "promts": {},
+        "slots": [
           {
-            "type": "PlainText",
-            "value": "In which region? Japan, North America or Europe?"
-          },
-          {
-            "type": "PlainText",
-            "value": "For Japan, North America or Europe?"
+            "name": "regionslot",
+            "type": "REGION",
+            "confirmationRequired": false,
+            "elicitationRequired": true,
+            "prompts": {
+              "elicitation": "Elicit.RequestSplatfestUpcoming.regionslot"
+            }
           }
         ]
       },
       {
-        "id": "Elicit.RequestSplatfestUpcoming.regionslot",
-        "variations": [
+        "name": "RequestStagesUpcoming",
+        "confirmationRequired": false,
+        "promts": {},
+        "slots": [
           {
-            "type": "PlainText",
-            "value": "In North America, Japan or Europe?"
-          },
-          {
-            "type": "PlainText",
-            "value": "What region? Japan, North America or Europe?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.RequestStagesUpcoming.regionslot",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "In North America, Japan or Europe?"
-          },
-          {
-            "type": "PlainText",
-            "value": "What region? Japan, North America or Europe?"
+            "name": "regionslot",
+            "type": "REGION",
+            "confirmationRequired": false,
+            "elicitationRequired": true,
+            "prompts": {
+              "elicitation": "Elicit.RequestStagesUpcoming.regionslot"
+            }
           }
         ]
       }
     ]
-  }
+  },
+  "prompts": [
+    {
+      "id": "Elicit.RequestScheduleForRuleAndMode.gameruleslot",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "What type of game do you want to play? Tower, zones, clam blitz or rainmaker?"
+        },
+        {
+          "type": "PlainText",
+          "value": "Do you want to clam blitz, tower, zones or rainmaker?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.RequestScheduleForRuleAndMode.gamemodeslot",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "What game mode do you want to play that in? Ranked or league?"
+        },
+        {
+          "type": "PlainText",
+          "value": "Want to play that in rankend or league?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.RequestScheduleForStage.stageslot",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "What stage?"
+        },
+        {
+          "type": "PlainText",
+          "value": "On which stage?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.RequestSplatfestResult.regionslot",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "In which region? Japan, North America or Europe?"
+        },
+        {
+          "type": "PlainText",
+          "value": "For Japan, North America or Europe?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.RequestSplatfestUpcoming.regionslot",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "In North America, Japan or Europe?"
+        },
+        {
+          "type": "PlainText",
+          "value": "What region? Japan, North America or Europe?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.RequestStagesUpcoming.regionslot",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "In North America, Japan or Europe?"
+        },
+        {
+          "type": "PlainText",
+          "value": "What region? Japan, North America or Europe?"
+        }
+      ]
+    }
+  ]
 }
