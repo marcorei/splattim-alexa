@@ -68,11 +68,21 @@
           "slots": [
             {
               "name": "gameruleslot",
-              "type": "GAMERULE"
+              "type": "GAMERULE",
+              "samples": [
+                "Play {gameruleslot}",
+                "I want to play {gameruleslot}",
+                "{gameruleslot}"
+              ]
             },
             {
               "name": "gamemodeslot",
-              "type": "GAMEMODE"
+              "type": "GAMEMODE",
+              "samples": [
+                "in  the mode {gamemodeslot}",
+                "in {gamemodeslot}",
+                "{gamemodeslot}"
+              ]
             }
           ],
           "samples": [
@@ -87,7 +97,12 @@
           "slots": [
             {
               "name": "stageslot",
-              "type": "STAGE"
+              "type": "STAGE",
+              "samples": [
+                "on stage {stageslot}",
+                "on {stageslot}",
+                "{stageslot}"
+              ]
             }
           ],
           "samples": [
@@ -102,7 +117,12 @@
           "slots": [
             {
               "name": "regionslot",
-              "type": "REGION"
+              "type": "REGION",
+              "samples": [
+                "for {regionslot}",
+                "in {regionslot}",
+                "{regionslot}"
+              ]
             }
           ],
           "samples": [
@@ -119,14 +139,19 @@
           "slots": [
             {
               "name": "regionslot",
-              "type": "REGION"
+              "type": "REGION",
+              "samples": [
+                "in {regionslot}",
+                "{regionslot}"
+              ]
             }
           ],
           "samples": [
             "is currently a splatfest in {regionslot}",
             "when is splatfest",
             "when is the next splatfest in {regionslot}",
-            "when is the next splatfest"
+            "when is the next splatfest",
+            "is splatfest now"
           ]
         },
         {
@@ -138,6 +163,9 @@
             }
           ],
           "samples": [
+            "current stages for {gamemodeslot}",
+            "what's the current schedule for {gamemodeslot}",
+            "current schedule for {gamemodeslot}",
             "show me the current maps for {gamemodeslot}",
             "show me the current stages for {gamemodeslot}",
             "show me {gamemodeslot} current stages",
@@ -158,10 +186,18 @@
           "slots": [
             {
               "name": "gamemodeslot",
-              "type": "GAMEMODE"
+              "type": "GAMEMODE",
+              "samples": [
+                "for {gamemodeslot}",
+                "{gamemodeslot}"
+              ]
             }
           ],
           "samples": [
+            "future maps for {gamemodeslot}",
+            "upcoming maps for {gamemodeslot}",
+            "future stages for {gamemodeslot}",
+            "upcoming stages for {gamemodeslot}",
             "i want to see all stages for {gamemodeslot}",
             "show me all upcoming maps for {gamemodeslot}",
             "show me every future stage for {gamemodeslot}",
@@ -204,18 +240,62 @@
             "jump off a cliff",
             "you suck"
           ]
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
         }
       ],
       "types": [
         {
-          "name": "GAMEMODE",
           "values": [
             {
               "id": "ranked",
               "name": {
                 "value": "ranked",
                 "synonyms": [
-                  "ranked mode", 
+                  "ranked battle",
+                  "ranked mode",
                   "ranked battles"
                 ]
               }
@@ -225,7 +305,8 @@
               "name": {
                 "value": "regular",
                 "synonyms": [
-                  "regular mode", 
+                  "regular battle",
+                  "regular mode",
                   "regular battles"
                 ]
               }
@@ -235,11 +316,11 @@
               "name": {
                 "value": "all",
                 "synonyms": [
-                  "all modes", 
-                  "all game modes", 
-                  "every mode", 
-                  "all battles", 
-                  "every battle mode", 
+                  "all modes",
+                  "all game modes",
+                  "every mode",
+                  "all battles",
+                  "every battle mode",
                   "all battle modes"
                 ]
               }
@@ -249,404 +330,435 @@
               "name": {
                 "value": "league",
                 "synonyms": [
-                  "ranked mode", 
-                  "ranked battles"
+                  "league battle",
+                  "league battles",
+                  "league mode"
                 ]
               }
             }
-          ]
+          ],
+          "name": "GAMEMODE"
         },
         {
-          "name": "GAMERULE",
           "values": [
             {
               "id": "clam_blitz",
               "name": {
                 "value": "clam blitz",
-                "synonyms":["blitz", "clams"] 
+                "synonyms": [
+                  "blitz",
+                  "clams"
+                ]
               }
             },
             {
               "id": "tower_control",
               "name": {
                 "value": "tower control",
-                "synonyms":["tower"] 
+                "synonyms": [
+                  "tower"
+                ]
               }
             },
             {
               "id": "splat_zones",
               "name": {
                 "value": "splat zones",
-                "synonyms":["zones"] 
+                "synonyms": [
+                  "zones"
+                ]
               }
             },
             {
               "id": "turf_war",
               "name": {
                 "value": "turf war",
-                "synonyms":["turf"] 
+                "synonyms": [
+                  "turf"
+                ]
               }
             },
             {
               "id": "rainmaker",
               "name": {
                 "value": "rainmaker",
-                "synonyms":[] 
+                "synonyms": []
               }
             }
-          ]
+          ],
+          "name": "GAMERULE"
         },
         {
-          "name": "REGION",
           "values": [
             {
               "id": "eu",
               "name": {
                 "value": "eu",
-                "synonyms":[
-                  "EU", 
+                "synonyms": [
+                  "EU",
                   "Europe",
                   "Germany",
                   "european",
                   "german"
-                ] 
+                ]
               }
             },
             {
               "id": "na",
               "name": {
                 "value": "na",
-                "synonyms":[
+                "synonyms": [
                   "NA",
                   "North America",
                   "USA",
                   "America",
                   "US",
                   "american"
-                ] 
+                ]
               }
             },
             {
               "id": "jp",
               "name": {
                 "value": "jp",
-                "synonyms":[
+                "synonyms": [
                   "JP",
                   "Japan",
                   "japanese",
                   "asian",
                   "Asia"
-                ] 
+                ]
               }
             }
-          ]
+          ],
+          "name": "REGION"
         },
         {
-          "name": "STAGE",
           "values": [
             {
               "id": "0",
               "name": {
                 "value": "The Reef",
-                "synonyms":["Reef"] 
+                "synonyms": [
+                  "Reef"
+                ]
               }
             },
             {
               "id": "1",
               "name": {
                 "value": "Musselforge Fitness",
-                "synonyms":["Musselforge"] 
+                "synonyms": [
+                  "Musselforge"
+                ]
               }
             },
             {
               "id": "2",
               "name": {
                 "value": "Starfish Mainstage",
-                "synonyms":[
+                "synonyms": [
                   "Mainstage",
                   "Starfish"
-                ] 
+                ]
               }
             },
             {
               "id": "3",
               "name": {
                 "value": "Sturgeon Shipyard",
-                "synonyms":["Shipyard"] 
+                "synonyms": [
+                  "Shipyard"
+                ]
               }
             },
             {
               "id": "4",
               "name": {
                 "value": "Inkblot Art Academy",
-                "synonyms":[
+                "synonyms": [
                   "Inkblot",
                   "Academy"
-                ] 
+                ]
               }
             },
             {
               "id": "5",
               "name": {
                 "value": "Humpback Pump Track",
-                "synonyms":[
+                "synonyms": [
                   "Humpback",
                   "Pump Track"
-                ] 
+                ]
               }
             },
             {
               "id": "6",
               "name": {
                 "value": "Manta Maria",
-                "synonyms":[] 
+                "synonyms": []
               }
             },
             {
               "id": "7",
               "name": {
                 "value": "Port Mackerel",
-                "synonyms":[] 
+                "synonyms": []
               }
             },
             {
               "id": "8",
               "name": {
                 "value": "Moray Towers",
-                "synonyms":["Moray"] 
+                "synonyms": [
+                  "Moray"
+                ]
               }
             },
             {
               "id": "9",
               "name": {
                 "value": "Snapper Canal",
-                "synonyms":[] 
+                "synonyms": []
               }
             },
             {
               "id": "10",
               "name": {
                 "value": "Kelp Dome",
-                "synonyms":[] 
+                "synonyms": []
               }
             },
             {
               "id": "11",
               "name": {
                 "value": "Blackbelly Skatepark",
-                "synonyms":[
+                "synonyms": [
                   "Blackbelly",
                   "Skatepark"
-                ] 
+                ]
               }
             },
             {
               "id": "12",
               "name": {
                 "value": "Shellendorf Institute",
-                "synonyms":[
+                "synonyms": [
                   "Shellendorf",
                   "Institute"
-                ] 
+                ]
               }
             },
             {
               "id": "13",
               "name": {
                 "value": "MakoMart",
-                "synonyms":[] 
+                "synonyms": []
               }
             },
             {
               "id": "14",
               "name": {
                 "value": "Walleye Warehouse",
-                "synonyms":["Warehouse"] 
+                "synonyms": [
+                  "Warehouse"
+                ]
               }
             },
             {
               "id": "15",
               "name": {
                 "value": "Arowana Mall",
-                "synonyms":["Arowana"] 
+                "synonyms": [
+                  "Arowana"
+                ]
+              }
+            },
+            {
+              "id": "18",
+              "name": {
+                "value": "Goby Arena",
+                "synonyms": [
+                  "Goby"
+                ]
+              }
+            }
+          ],
+          "name": "STAGE"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RequestScheduleForRuleAndMode",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "gameruleslot",
+              "type": "GAMERULE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.340382478425.1025464462114"
+              }
+            },
+            {
+              "name": "gamemodeslot",
+              "type": "GAMEMODE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.340382478425.304156119983"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RequestScheduleForStage",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "stageslot",
+              "type": "STAGE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.546799508144.945537344796"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RequestStagesUpcoming",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "gamemodeslot",
+              "type": "GAMEMODE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.239655426103.652348697638"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RequestSplatfestResult",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "regionslot",
+              "type": "REGION",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.480303208287.1113358038275"
+              }
+            }
+          ]
+        },
+        {
+          "name": "RequestSplatfestUpcoming",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "regionslot",
+              "type": "REGION",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.876168656353.1221237982652"
               }
             }
           ]
         }
       ]
-    }
-  },
-  "dialog": {
-    "intents": [
+    },
+    "prompts": [
       {
-        "name": "RequestScheduleForRuleAndMode",
-        "confirmationRequired": false,
-        "promts": {},
-        "slots": [
+        "id": "Elicit.Slot.340382478425.1025464462114",
+        "variations": [
           {
-            "name": "gameruleslot",
-            "type": "GAMERULE",
-            "confirmationRequired": false,
-            "elicitationRequired": true,
-            "prompts": {
-              "elicitation": "Elicit.RequestScheduleForRuleAndMode.gameruleslot"
-            }
+            "type": "PlainText",
+            "value": " Do you want to play clam blitz, tower, zones or rainmaker?"
           },
           {
-            "name": "gamemodeslot",
-            "type": "GAMEMODE",
-            "confirmationRequired": false,
-            "elicitationRequired": true,
-            "prompts": {
-              "elicitation": "Elicit.RequestScheduleForRuleAndMode.gamemodeslot"
-            }
+            "type": "PlainText",
+            "value": "What type of game do you want to play - Tower, zones, clam blitz or rainmaker?"
           }
         ]
       },
       {
-        "name": "RequestScheduleForStage",
-        "confirmationRequired": false,
-        "promts": {},
-        "slots": [
+        "id": "Elicit.Slot.340382478425.304156119983",
+        "variations": [
           {
-            "name": "stageslot",
-            "type": "STAGE",
-            "confirmationRequired": false,
-            "elicitationRequired": true,
-            "prompts": {
-              "elicitation": "Elicit.RequestScheduleForStage.stageslot"
-            }
+            "type": "PlainText",
+            "value": "Want to play that in rankend or league?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What game mode do you want to play that in - Ranked or league?"
           }
         ]
       },
       {
-        "name": "RequestSplatfestResult",
-        "confirmationRequired": false,
-        "promts": {},
-        "slots": [
+        "id": "Elicit.Slot.546799508144.945537344796",
+        "variations": [
           {
-            "name": "regionslot",
-            "type": "REGION",
-            "confirmationRequired": false,
-            "elicitationRequired": true,
-            "prompts": {
-              "elicitation": "Elicit.RequestSplatfestResult.regionslot"
-            }
+            "type": "PlainText",
+            "value": " On which stage?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What stage?"
           }
         ]
       },
       {
-        "name": "RequestSplatfestUpcoming",
-        "confirmationRequired": false,
-        "promts": {},
-        "slots": [
+        "id": "Elicit.Slot.239655426103.652348697638",
+        "variations": [
           {
-            "name": "regionslot",
-            "type": "REGION",
-            "confirmationRequired": false,
-            "elicitationRequired": true,
-            "prompts": {
-              "elicitation": "Elicit.RequestSplatfestUpcoming.regionslot"
-            }
+            "type": "PlainText",
+            "value": "For what game mode - regular, ranked or league?"
+          },
+          {
+            "type": "PlainText",
+            "value": "For ranked battles, league or regular?"
+          },
+          {
+            "type": "PlainText",
+            "value": "For regular battles, league or ranked?"
           }
         ]
       },
       {
-        "name": "RequestStagesUpcoming",
-        "confirmationRequired": false,
-        "promts": {},
-        "slots": [
+        "id": "Elicit.Slot.480303208287.1113358038275",
+        "variations": [
           {
-            "name": "regionslot",
-            "type": "REGION",
-            "confirmationRequired": false,
-            "elicitationRequired": true,
-            "prompts": {
-              "elicitation": "Elicit.RequestStagesUpcoming.regionslot"
-            }
+            "type": "PlainText",
+            "value": "For Japan, North America or Europe?"
+          },
+          {
+            "type": "PlainText",
+            "value": "In which region - Japan, North America or Europe?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.876168656353.1221237982652",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What region - Japan, North America or Europe?"
+          },
+          {
+            "type": "PlainText",
+            "value": "In North America, Japan or Europe?"
           }
         ]
       }
     ]
-  },
-  "prompts": [
-    {
-      "id": "Elicit.RequestScheduleForRuleAndMode.gameruleslot",
-      "variations": [
-        {
-          "type": "PlainText",
-          "value": "What type of game do you want to play? Tower, zones, clam blitz or rainmaker?"
-        },
-        {
-          "type": "PlainText",
-          "value": "Do you want to clam blitz, tower, zones or rainmaker?"
-        }
-      ]
-    },
-    {
-      "id": "Elicit.RequestScheduleForRuleAndMode.gamemodeslot",
-      "variations": [
-        {
-          "type": "PlainText",
-          "value": "What game mode do you want to play that in? Ranked or league?"
-        },
-        {
-          "type": "PlainText",
-          "value": "Want to play that in rankend or league?"
-        }
-      ]
-    },
-    {
-      "id": "Elicit.RequestScheduleForStage.stageslot",
-      "variations": [
-        {
-          "type": "PlainText",
-          "value": "What stage?"
-        },
-        {
-          "type": "PlainText",
-          "value": "On which stage?"
-        }
-      ]
-    },
-    {
-      "id": "Elicit.RequestSplatfestResult.regionslot",
-      "variations": [
-        {
-          "type": "PlainText",
-          "value": "In which region? Japan, North America or Europe?"
-        },
-        {
-          "type": "PlainText",
-          "value": "For Japan, North America or Europe?"
-        }
-      ]
-    },
-    {
-      "id": "Elicit.RequestSplatfestUpcoming.regionslot",
-      "variations": [
-        {
-          "type": "PlainText",
-          "value": "In North America, Japan or Europe?"
-        },
-        {
-          "type": "PlainText",
-          "value": "What region? Japan, North America or Europe?"
-        }
-      ]
-    },
-    {
-      "id": "Elicit.RequestStagesUpcoming.regionslot",
-      "variations": [
-        {
-          "type": "PlainText",
-          "value": "In North America, Japan or Europe?"
-        },
-        {
-          "type": "PlainText",
-          "value": "What region? Japan, North America or Europe?"
-        }
-      ]
-    }
-  ]
+  }
 }
