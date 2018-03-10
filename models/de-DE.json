@@ -715,11 +715,7 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": " Do you want to play clam blitz, tower, zones or rainmaker?"
-          },
-          {
-            "type": "PlainText",
-            "value": "What type of game do you want to play - Tower, zones, clam blitz or rainmaker?"
+            "value": "Welchen Spieltyp willst Du spielen - zum Beispiel Muschel-Chaos, Herrschaft oder Goldfisch?"
           }
         ]
       },
@@ -728,11 +724,11 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "Want to play that in rankend or league?"
+            "value": "Für Ligakampf oder Rangkampf?"
           },
           {
             "type": "PlainText",
-            "value": "What game mode do you want to play that in - Ranked or league?"
+            "value": "Welcher Spiele-Modus - Rangkampf oder Ligakampf?"
           }
         ]
       },
@@ -741,11 +737,11 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": " On which stage?"
+            "value": "Welche Arena?"
           },
           {
             "type": "PlainText",
-            "value": "What stage?"
+            "value": "Auf welcher Arena?"
           }
         ]
       },
@@ -754,15 +750,11 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "For what game mode - regular, ranked or league?"
+            "value": "Für welchen Spiel-Modus - Standardkampf, Rangkampf oder Ligakampf?"
           },
           {
             "type": "PlainText",
-            "value": "For ranked battles, league or regular?"
-          },
-          {
-            "type": "PlainText",
-            "value": "For regular battles, league or ranked?"
+            "value": "Für Rangkampf, Ligakampf oder Standardkampf?"
           }
         ]
       },
@@ -771,11 +763,11 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "For Japan, North America or Europe?"
+            "value": "In Japan, Nord Amerika oder Europa?"
           },
           {
             "type": "PlainText",
-            "value": "In which region - Japan, North America or Europe?"
+            "value": "In welcher Region - Japan, Nord Amerika oder Europa?"
           }
         ]
       },
@@ -784,11 +776,11 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "What region - Japan, North America or Europe?"
+            "value": "In Japan, Nord Amerika oder Europa?"
           },
           {
             "type": "PlainText",
-            "value": "In North America, Japan or Europe?"
+            "value": "In welcher Region - Japan, Nord Amerika oder Europa?"
           }
         ]
       }
