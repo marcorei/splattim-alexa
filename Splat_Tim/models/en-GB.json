@@ -148,6 +148,8 @@
             }
           ],
           "samples": [
+            "splatfest",
+            "splat fest",
             "is currently a splatfest in {regionslot}",
             "when is splatfest",
             "when is the next splatfest in {regionslot}",
