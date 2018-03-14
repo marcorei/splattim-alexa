@@ -286,16 +286,6 @@
         {
           "name": "AMAZON.ScrollUpIntent",
           "samples": []
-        },
-        {
-          "name": "CatchAll",
-          "slots": [
-            {
-              "name": "phraseslot",
-              "type": "AMAZON.SearchQuery"
-            }
-          ],
-          "samples": []
         }
       ],
       "types": [
