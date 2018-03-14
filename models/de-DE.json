@@ -152,6 +152,7 @@
             }
           ],
           "samples": [
+            "zeige mir die aktuellen Arenen für den {gamemodeslot}",
             "Aktuelle Arenen für {gamemodeslot}",
             "Welche Maps gibt es im {gamemodeslot}",
             "Welche Arenen gibt es gerade im {gamemodeslot}",

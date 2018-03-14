@@ -49,6 +49,7 @@
         {
           "name": "RequestSalmonRun",
           "samples": [
+            "Salmon Run",
             "What's the current Salmon Run rotation",
             "When's the next Salmon Run",
             "When is the next Salmon Run shift",
@@ -163,6 +164,7 @@
             }
           ],
           "samples": [
+            "what are the current maps",
             "current stages for {gamemodeslot}",
             "what's the current schedule for {gamemodeslot}",
             "current schedule for {gamemodeslot}",
