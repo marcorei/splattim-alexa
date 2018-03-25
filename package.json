@@ -1,0 +1,20 @@
+{
+  "name": "splattim-alexa",
+  "version": "1.0.0",
+  "description": "Alexa skill",
+  "main": "Splat_Tim/skill.json",
+  "scripts": {
+    "deploy:model": "ask deploy --target model",
+    "clone": "ask clone"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcorei/splattim-alexa.git"
+  },
+  "author": "Markus Riegel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcorei/splattim-alexa/issues"
+  },
+  "homepage": "https://github.com/marcorei/splattim-alexa#readme"
+}
