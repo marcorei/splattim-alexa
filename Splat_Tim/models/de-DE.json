@@ -16,8 +16,18 @@
           "samples": []
         },
         {
+          "name": "MemeBooyah",
+          "samples": [
+            "Booyah",
+            "Buddha",
+            "Oh ja"
+          ]
+        },
+        {
           "name": "RequestMerchandise",
           "samples": [
+            "Merchandise",
+            "Ausrüstung",
             "Welches Merchandise gibt es im Shop",
             "Welche Ausrüstung ist aktuell im Angebot",
             "Welche Kleidung kann ich im Splat-Net kaufen",
@@ -33,6 +43,7 @@
         {
           "name": "RequestSalmonRun",
           "samples": [
+            "Bär GmbH",
             "Wann kann ich Salmon Run spielen",
             "Ist Salmon Run gerade verfügbar",
             "Ist Salmon Run gerade offen",
@@ -152,6 +163,7 @@
             }
           ],
           "samples": [
+            "Aktive Arenen",
             "Aktuelle Arenen für {gamemodeslot}",
             "Welche Maps gibt es im {gamemodeslot}",
             "Welche Arenen gibt es gerade im {gamemodeslot}",

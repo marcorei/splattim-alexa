@@ -18,7 +18,6 @@
         {
           "name": "MemeHeDoesIt",
           "samples": [
-            "Booyah",
             "He does it",
             "It's him"
           ]
@@ -32,8 +31,17 @@
           ]
         },
         {
+          "name": "MemeBooyah",
+          "samples": [
+            "Booyah",
+            "Buddha",
+            "Oh yeah"
+          ]
+        },
+        {
           "name": "RequestMerchandise",
           "samples": [
+            "merchandise",
             "show me the current merchandise",
             "show me the splatnet exclusive gear",
             "what can i order from splatnet",
@@ -49,6 +57,11 @@
         {
           "name": "RequestSalmonRun",
           "samples": [
+            "Is Salmon Run open",
+            "Grizz Co",
+            "Crisco",
+            "When is the next Grizz Co shift",
+            "When is the next Crisco shift",
             "Salmon Run",
             "What's the current Salmon Run rotation",
             "When's the next Salmon Run",
@@ -166,6 +179,9 @@
             }
           ],
           "samples": [
+            "whats the current {gamemodeslot}",
+            "what {gamemodeslot} is on",
+            "which {gamemodeslot} is currently in rotation",
             "what are the current maps",
             "current stages for {gamemodeslot}",
             "what's the current schedule for {gamemodeslot}",
