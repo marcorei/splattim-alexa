@@ -595,6 +595,24 @@
               }
             },
             {
+              "id": "16",
+              "name": {
+                "value": "Camp Triggerfish",
+                "synonyms": [
+                  "Triggerfish"
+                ]
+              }
+            },
+            {
+              "id": "17",
+              "name": {
+                "value": "Piranha Pit",
+                "synonyms": [
+                  "Piranha"
+                ]
+              }
+            },
+            {
               "id": "18",
               "name": {
                 "value": "Goby Arena",

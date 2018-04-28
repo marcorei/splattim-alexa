@@ -619,6 +619,25 @@
               }
             },
             {
+              "id": "16",
+              "name": {
+                "value": "Camp Schützenfisch",
+                "synonyms": [
+                  "Schützenfisch"
+                ]
+              }
+            },
+            {
+              "id": "17",
+              "name": {
+                "value": "Steinköhler-Grube",
+                "synonyms": [
+                  "Steinköhlergrube",
+                  "Steinköhler"
+                ]
+              }
+            },
+            {
               "id": "18",
               "name": {
                 "value": "Goby Arena",
