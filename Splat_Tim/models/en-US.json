@@ -103,7 +103,8 @@
             "how long do i have to wait to play {gameruleslot} in {gamemodeslot}",
             "what time does {gameruleslot} start again in {gamemodeslot}",
             "when can i play {gameruleslot} in {gamemodeslot}",
-            "when is the next {gameruleslot} for {gamemodeslot}"
+            "when is the next {gameruleslot} for {gamemodeslot}",
+            "when will {gameruleslot} be available"
           ]
         },
         {
