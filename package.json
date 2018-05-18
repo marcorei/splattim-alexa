@@ -4,7 +4,11 @@
   "description": "Alexa skill",
   "main": "Splat_Tim/skill.json",
   "scripts": {
-    "deploy:model": "ask deploy --target model",
+    "deploy:model": "npm run deploy:model:prepare && npm run deploy:model:upload && npm run deploy:model:cleanup",
+    "deploy:model:prepare": "cp ./models/de.json ./Splat_Tim/models/de-DE.json && cp ./models/en.json ./Splat_Tim/models/en-US.json && cp ./models/en.json ./Splat_Tim/models/en-UK.json && cp ./models/en.json ./Splat_Tim/models/en-CA.json && cp ./models/en.json ./Splat_Tim/models/en-AU.json && cp ./models/en.json ./Splat_Tim/models/en-IN.json",
+    "deploy:model:upload": "cd ./Splat_Tim && ask deploy --target model && cd ..",
+    "deploy:model:cleanup": "rm -r ./Splat_Tim/models",
+    "deploy:skill": "cd ./Splat_Tim && ask deploy --target skill && cd ..",
     "clone": "ask clone"
   },
   "repository": {
